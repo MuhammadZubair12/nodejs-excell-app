@@ -1,0 +1,1 @@
+web: node cross-env NODE_ENV=development && npm run nodemon
