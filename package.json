@@ -16,9 +16,9 @@
     "url": "https://github.com/aichbauer/express-rest-api-boilerplate/issues"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development && node ./api/api.js",
+    "dev": "node ./api/api.js",
     "lint": "eslint ./api/. ./config/. ./test/.",
-    "start": "cross-env NODE_ENV=development && npm run nodemon",
+    "start": "npm run nodemon",
     "nodemon": "nodemon --exec npm run dev",
     "production": "cross-env NODE_ENV=production && git push && git push heroku master"
   },
