@@ -30,6 +30,6 @@ const production = {
 };
 
 module.exports = {
-  development,
+  // development,
   production,
 };
