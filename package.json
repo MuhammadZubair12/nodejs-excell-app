@@ -1,0 +1,87 @@
+{
+  "name": "wal-backend",
+  "version": "0.0.0",
+  "author": "Muhammad Waleed Ghous <waleedghous91@gmail.com>",
+  "licence": "MIT",
+  "engines": {
+    "node": "8.11.1",
+    "npm": "5.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aichbauer/express-rest-api-boilerplate.git"
+  },
+  "homepage": "https://github.com/aichbauer/express-rest-api-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/aichbauer/express-rest-api-boilerplate/issues"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development && node ./api/api.js",
+    "lint": "eslint ./api/. ./config/. ./test/.",
+    "start": "cross-env NODE_ENV=development && npm run nodemon",
+    "nodemon": "nodemon --exec npm run dev",
+    "production": "cross-env NODE_ENV=production && git push && git push heroku master"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "babel": "inherit"
+  },
+  "nyc": {
+    "exclude": [
+      "test"
+    ]
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "archiver": "^3.0.0",
+    "babel-polyfill": "^6.23.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.17.2",
+    "convert-excel-to-json": "^1.4.0",
+    "cors": "^2.8.3",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.0.0",
+    "email-templates": "^3.5.2",
+    "express": "^4.15.3",
+    "express-fileupload": "^0.4.0",
+    "express-routes-mapper": "^1.0.1",
+    "express-validator": "^5.0.2",
+    "helmet": "^3.6.1",
+    "image-data-uri": "^2.0.0",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.5",
+    "moment-timezone": "^0.5.21",
+    "moment-weekdaysin": "^1.0.1",
+    "mysql2": "^1.5.3",
+    "ng-circle-progress": "^1.0.0",
+    "nodemon": "^1.11.0",
+    "nyc": "^11.0.1",
+    "pg": "^8.7.1",
+    "qrcode": "^1.2.2",
+    "random-number": "0.0.9",
+    "rxjs": "^6.3.2",
+    "sequelize": "^4.22.12",
+    "sequelize-cli": "^3.1.0",
+    "uuid": "^3.3.2",
+    "winston": "^3.0.0",
+    "xlsx-to-json": "^0.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "husky": "^0.13.4",
+    "shx": "^0.2.2"
+  }
+}

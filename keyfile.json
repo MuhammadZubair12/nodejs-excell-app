@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cashify-1531071535592",
+  "private_key_id": "68aef361df63627bab33bdab0250af4360c404cf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzJ4rx0ZZE8lcw\nD/prbHwKrKEB5PjbwuhBGSwGemNUBONvhKs1lzcoRPOF8hxldECt4LvJSAWC/mMQ\ntordRBjN2rDa2nh49GDLrsTbzgA3XIDyHplIl7zkqvK5KWSYY6ntzK7LbS3t9F7R\nw2hagfG/fSLmy1DfkQx4nX1ctjitveCJlr2j6fx9doAqaHSxBWvMEurS+TNV1lwC\nVhrXGeGgv4fNXGaeoJrPgcBb+8CZaj8iIFoZ42Mjlsbft+GPOVr4sky104VrSY0R\n9cUQXo+CVawt2z/2+bLZkJdItAs4/xwT9yrXEMxh4j2SC4EERkjpmINrhqzt/yTJ\nGXIOQeWDAgMBAAECggEAEL4coWYW3Fv8Le+wVXhj9z4UJfCCGUzpFlGwku0Tz0xN\np6RcY7u9Wd69Fhgpnd70FHaGK39hlHu1l7WXhf972fEayg5/Z75e4BTLLPI0LvhO\nzKceEsdWIytJV73jOs1FmjBLaD4h0V/JugzATy+0VKhF1Lp3f7fh1HvTYBC00fez\n1sNPOmqYi8gwgpt6AT5vuexlSWJsN3lZY9vfUN2f09s4+v03F08Fyq0RHnzauLU8\nqUBmpQ3ZKhl3rKw7jBOh22eieJ51CpRcmFWQpwKg9UmzgT29PQCP0KS+tiHGSWM+\nBRZeKmqQZMe1NCBAz38jZ6I/yYTfGZXxMyzKYqKHYQKBgQDtNQ3Om6fxAMHAtJXl\ngkaxhgB37NCc7kcw3mv4YrBWcFUIm7cGkBZqpwPfSlwVYeSEoYkXkjtiC9WjVEuj\nov2XEnsp9/W2BEbUwPyH3o1mB5/u+nFQkqg840pTOBeraQpDEOxd3rFUBT6x5xlT\nIrsuZcl6AF1UbS3JP1yyTnAZmwKBgQDBWRWuuvBNmJiz+Wdc939LDDC+ZVIfrJKB\nDgPqsWX5zxDf2bHFoeM6XpkyJeku3yKGpvHwPPTK10Z05+mEDBcRtke4iSlzg7WK\nDvQgVG2ZnQpcd+ILCAIfHFfZG8O7DQ6l5JGsQFGklXrrHSlQTipC4zToxRyOtdSA\nW3sk7Mi2OQKBgQCWFW1o/j+iUzJENX5qOqV0CS8ese3EfVb56qEyBW9BIc4LpkqF\nkoE8dfQTQb9FoCywZmyRR2rfPFGuB9Xb8XK2NXFMOqFyyv3t+zVM2llo5wYgdMFh\nk4lzDPSn9uOzBsEBciG7uv1EBhWHBouVeHIqhyiVUsm6c2H25WpHPy3aZQKBgHF6\n2NgKDjps4stXCYyuEr84c298RlwizIYEdNYNsr2RA+VufwFxB83dcerWB2ukOT5w\nw7VuAXsAKPE6oHsJIY0awDOWBYcv+aADMNO82er8GfW1wy0YUS5zUzgxLIsfmcZS\nRhGkWobP2Sofnnzss684bXhlIGK+Y+/GQZulghQ5AoGBALrib64525sSDOT93fjk\nWqm5+XMs81/yU2vrkcm3wofcXy5YOVSldouJDP5r1I83UeFH5zVqoMVg1Sij3YEm\nkAfL4kbWOcEkFhb7hukoDXZov4K5d0mDvdKn6wHjYlTM1d1JZN8g8TuwNpWyIjEL\nkYgfIfiCo8Quw7UQ5WNK2qG3\n-----END PRIVATE KEY-----\n",
+  "client_email": "cashify@cashify-1531071535592.iam.gserviceaccount.com",
+  "client_id": "102312353179264010953",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cashify%40cashify-1531071535592.iam.gserviceaccount.com"
+}
