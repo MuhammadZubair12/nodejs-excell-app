@@ -13,12 +13,13 @@ switch (process.env.NODE_ENV) {
       connection.production.password, {
         host: connection.production.host,
         dialect: connection.production.dialect,
-        port:connection.production.port,
+        operatorsAliases: false,
+        // port:connection.production.port,
         pool: {
           max: 5,
           min: 0,
-          idle: 20000,
-          acquire: 20000
+          idle: 10000,
+          // acquire: 20000
         },
       });
     break;
@@ -29,12 +30,13 @@ switch (process.env.NODE_ENV) {
       connection.testing.password, {
         host: connection.testing.host,
         dialect: connection.testing.dialect,
-        port:connection.production.port,
+        operatorsAliases: false,
+        // port:connection.production.port,
         pool: {
           max: 5,
           min: 0,
-          idle: 20000,
-          acquire: 20000
+          idle: 10000,
+          // acquire: 20000
         },
       });
     break;
@@ -45,12 +47,13 @@ switch (process.env.NODE_ENV) {
       connection.development.password, {
         host: connection.development.host,
         dialect: connection.development.dialect,
-        port:connection.development.port,
+        operatorsAliases: false,
+        // port:connection.development.port,
         pool: {
           max: 5,
           min: 0,
-          idle: 20000,
-          acquire: 20000
+          idle: 10000,
+          // acquire: 20000
         },
       });
     break;
@@ -61,12 +64,13 @@ switch (process.env.NODE_ENV) {
     connection.production.password, {
       host: connection.production.host,
       dialect: connection.production.dialect,
-      port:connection.production.port,
+      operatorsAliases: false,
+      // port:connection.production.port,
       pool: {
         max: 5,
         min: 0,
-        idle: 20000,
-        acquire: 20000
+        idle: 10000,
+        // acquire: 20000
       },
     });
 }
