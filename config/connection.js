@@ -1,14 +1,14 @@
-// let pool_config = {
-//   max: 5,
-//   min: 0,
-//   idle: 10000,
-//   acquire: 10000,
-//   handleDisconnects: true,
-//   evict: 60000,
-//   connectRetries: 5,
-//   operatorsAliases: false,
-//   autoreconnect: true,
-// }
+let pool_config = {
+  max: 5,
+  min: 0,
+  idle: 10000,
+  acquire: 10000,
+  handleDisconnects: true,
+  evict: 60000,
+  connectRetries: 5,
+  operatorsAliases: false,
+  autoreconnect: true,
+}
 const development = {
   database: 'countifier',
   username: 'postgres',
@@ -16,7 +16,7 @@ const development = {
   host: 'localhost',
   dialect: 'postgres',
   port:5432,
-  // pool: pool_config,
+  pool: pool_config,
 };
 
 const production = {

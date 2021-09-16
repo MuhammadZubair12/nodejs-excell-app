@@ -354,6 +354,7 @@ const UserController = () => {
   const sheet = (req, res) => {
     let sheetdata = [];
     const body = req.body;
+    console.log(body);
     body.forEach((row) => {
       let cs =  {
         name: row[0],
@@ -370,6 +371,7 @@ const UserController = () => {
     })
     sheetdata.shift();
     return models.sheet.bulkCreate(sheetdata).then(_cs=> {
+      // console.log('Bodydd', _cs)
       return res.status(200).json(_cs);
     }).catch(err=> {
       return res.status(500).json(err);
