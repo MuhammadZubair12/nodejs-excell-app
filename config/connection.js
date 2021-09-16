@@ -20,12 +20,12 @@ const development = {
 };
 
 const production = {
-  database: 'heroku_8d0dcc4de6842ba',
-  username: 'b12992ed7073bc',
-  password: '6678e912',
-  host: 'us-cdbr-iron-east-01.cleardb.net',
-  dialect: 'mysql',
-  port:3306,
+  database: 'da1dvo9ivmcgk2',
+  username: 'fyherdyowangiq',
+  password: '9e3b2ca441fc0dcb00bb400b8651f57dab3507a5119ab007507ed1d6c9a2e892',
+  host: 'ec2-34-227-120-94.compute-1.amazonaws.com',
+  dialect: 'postgres',
+  port:5432,
   pool: pool_config,
 };
 
