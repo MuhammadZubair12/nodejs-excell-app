@@ -24,8 +24,8 @@ const development = {
   password: '9382e55bf7e994dd32dc88856f737ba82ab4ec074f96271fe95b0310749c65b7',
   host: 'ec2-54-81-126-150.compute-1.amazonaws.com',
   dialect: 'postgres',
-  // port:5432,
-  // pool: pool_config,
+  port:5432,
+  pool: pool_config,
 };
 
 const production = {
@@ -34,8 +34,8 @@ const production = {
   password: '9382e55bf7e994dd32dc88856f737ba82ab4ec074f96271fe95b0310749c65b7',
   host: 'ec2-54-81-126-150.compute-1.amazonaws.com',
   dialect: 'postgres',
-  // port:5432,
-  // pool: pool_config,
+  port:5432,
+  pool: pool_config,
 };
 
 module.exports = {

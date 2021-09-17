@@ -20,7 +20,7 @@
     "lint": "eslint ./api/. ./config/. ./test/.",
     "start": "npm run nodemon",
     "nodemon": "nodemon --exec npm run dev",
-    "production": "cross-env NODE_ENV=production && git push && git push heroku master"
+    "production": "node ./api/api.js"
   },
   "babel": {
     "presets": [
