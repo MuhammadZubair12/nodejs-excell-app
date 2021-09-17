@@ -533,7 +533,7 @@ const UserController = () => {
     getDriver,
     getAllDrivers,
     updateDriver,
-    sheet,
+    sheet
   };
 };
 
