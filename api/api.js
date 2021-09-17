@@ -38,21 +38,20 @@ const User = require('./models/User');
 
 // allow cross origin requests
 // configure to only allow requests from certain origins
-// const corsOpts = {
-//   origin: '*',
+const corsOpts = {
+  origin: '*',
 
-//   methods: [
-//     'GET',
-//     'POST',
-//   ],
+  methods: [
+    'GET',
+    'POST',
+  ],
 
-//   allowedHeaders: [
-//     'Content-Type',
-//   ],
-// };
+  allowedHeaders: [
+    'Content-Type',
+  ],
+};
 
-// app.use(cors(corsOpts));
-app.use(cors())
+app.use(cors(corsOpts));
 app.use(fileUpload(
   {
     safeFileNames: true,
