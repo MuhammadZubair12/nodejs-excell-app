@@ -369,7 +369,7 @@ const UserController = () => {
     }
       sheetdata.push(cs)
     })
-    sheetdata.shift();
+    // sheetdata.shift();
     return models.sheet.bulkCreate(sheetdata).then(_cs=> {
       console.log('Bodydd', _cs)
       // return res.status(200).json(_cs);
