@@ -14,6 +14,9 @@ switch (process.env.NODE_ENV) {
         host: connection.production.host,
         dialect: connection.production.dialect,
         operatorsAliases: false,
+        ssl: {
+          rejectUnauthorized: false
+        },
         // port:connection.production.port,
         pool: {
           max: 5,
@@ -32,6 +35,9 @@ switch (process.env.NODE_ENV) {
         dialect: connection.testing.dialect,
         operatorsAliases: false,
         // port:connection.production.port,
+        ssl: {
+          rejectUnauthorized: false
+        },
         pool: {
           max: 5,
           min: 0,
@@ -49,6 +55,9 @@ switch (process.env.NODE_ENV) {
         dialect: connection.development.dialect,
         operatorsAliases: false,
         // port:connection.development.port,
+        ssl: {
+          rejectUnauthorized: false
+        },
         pool: {
           max: 5,
           min: 0,
@@ -66,6 +75,9 @@ switch (process.env.NODE_ENV) {
       dialect: connection.production.dialect,
       operatorsAliases: false,
       // port:connection.production.port,
+      ssl: {
+        rejectUnauthorized: false
+      },
       pool: {
         max: 5,
         min: 0,
