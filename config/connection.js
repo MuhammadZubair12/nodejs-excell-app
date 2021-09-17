@@ -29,10 +29,10 @@ const development = {
 };
 
 const production = {
-  database: 'd5v333v5oao6sg',
-  username: 'ydmjueomnffthf',
-  password: '74eefd4970b0fe7ebe42e66871d5e1039c9c85b7f27f644bd83ea123cdf18152',
-  host: 'ec2-34-228-154-153.compute-1.amazonaws.com',
+  database: 'd7hu4m62vle4ve',
+  username: 'oppywrshksoyxy',
+  password: '9382e55bf7e994dd32dc88856f737ba82ab4ec074f96271fe95b0310749c65b7',
+  host: 'ec2-54-81-126-150.compute-1.amazonaws.com',
   dialect: 'postgres',
   port:5432,
   pool: pool_config,
