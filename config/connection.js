@@ -29,16 +29,16 @@ const development = {
 };
 
 const production = {
-  database: 'da1dvo9ivmcgk2',
-  username: 'fyherdyowangiq',
-  password: '9e3b2ca441fc0dcb00bb400b8651f57dab3507a5119ab007507ed1d6c9a2e892',
-  host: 'ec2-34-227-120-94.compute-1.amazonaws.com',
+  database: 'd5v333v5oao6sg',
+  username: 'ydmjueomnffthf',
+  password: '74eefd4970b0fe7ebe42e66871d5e1039c9c85b7f27f644bd83ea123cdf18152',
+  host: 'ec2-34-228-154-153.compute-1.amazonaws.com',
   dialect: 'postgres',
-  port:5432,
-  pool: pool_config,
+  // port:5432,
+  // pool: pool_config,
 };
 
 module.exports = {
-  development,
+  // development,
   production,
 };
