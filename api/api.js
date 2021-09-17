@@ -28,7 +28,7 @@ const app = express();
 const server = http.Server(app);
 const mappedOpenRoutes = mapRoutes(config.publicRoutes, 'api/controllers/');
 const mappedAuthRoutes = mapRoutes(config.privateRoutes, 'api/controllers/');
-models.sequelize.sync({force: true}).then(() => {
+models.sequelize.sync().then(() => {
   console.log('Database looks fine');
 }).catch((err) => {
   console.log('Error occurred while syncing db.', err);
