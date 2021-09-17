@@ -19,12 +19,12 @@ switch (process.env.NODE_ENV) {
           useUTC: true,
           sslmode: require
         },
-        // port:connection.production.port,
+        port:connection.production.port,
         pool: {
           max: 5,
           min: 0,
           idle: 10000,
-          // acquire: 20000
+          acquire: 20000
         },
       });
     break;
@@ -36,7 +36,7 @@ switch (process.env.NODE_ENV) {
         host: connection.testing.host,
         dialect: connection.testing.dialect,
         operatorsAliases: false,
-        // port:connection.production.port,
+        port:connection.production.port,
         dialectOptions: {
           ssl: { rejectUnauthorized: false },
           useUTC: true,
@@ -46,7 +46,7 @@ switch (process.env.NODE_ENV) {
           max: 5,
           min: 0,
           idle: 10000,
-          // acquire: 20000
+          acquire: 20000
         },
       });
     break;
@@ -58,7 +58,7 @@ switch (process.env.NODE_ENV) {
         host: connection.development.host,
         dialect: connection.development.dialect,
         operatorsAliases: false,
-        // port:connection.development.port,
+        port:connection.development.port,
         dialectOptions: {
           ssl: { rejectUnauthorized: false },
           useUTC: true,
@@ -68,7 +68,7 @@ switch (process.env.NODE_ENV) {
           max: 5,
           min: 0,
           idle: 10000,
-          // acquire: 20000
+          acquire: 20000
         },
       });
     break;
@@ -90,7 +90,7 @@ switch (process.env.NODE_ENV) {
         max: 5,
         min: 0,
         idle: 10000,
-        // acquire: 20000
+        acquire: 20000
       },
     });
 }
