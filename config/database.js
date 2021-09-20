@@ -5,6 +5,7 @@ const connection = require('./connection');
 
 let database;
 
+
 switch (process.env.NODE_ENV) {
   case 'production':
     database = new Sequelize(
@@ -15,9 +16,10 @@ switch (process.env.NODE_ENV) {
         dialect: connection.production.dialect,
         operatorsAliases: false,
         port:connection.production.port,
-        dialectOptions:ssl = {
-          rejectUnauthorized: false,
-          require: true,
+        dialectOptions: {
+          ssl: { rejectUnauthorized: false },
+          useUTC: true,
+          sslmode: require
         },
         pool: {
           max: 5,
