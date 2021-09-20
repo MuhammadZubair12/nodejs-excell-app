@@ -35,7 +35,6 @@ const production = {
   host: 'ec2-18-209-143-227.compute-1.amazonaws.com',
   dialect: 'postgres',
   port:5432,
-  ssl: true,
   pool: pool_config,
 };
 
@@ -46,7 +45,6 @@ const testing = {
   host: 'ec2-18-209-143-227.compute-1.amazonaws.com',
   dialect: 'postgres',
   port:5432,
-  ssl: true,
   pool: pool_config,
 };
 

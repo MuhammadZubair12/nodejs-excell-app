@@ -28,8 +28,8 @@ const app = express();
 const server = http.Server(app);
 const mappedOpenRoutes = mapRoutes(config.publicRoutes, 'api/controllers/');
 const mappedAuthRoutes = mapRoutes(config.privateRoutes, 'api/controllers/');
-var pg = require('pg');
-pg.defaults.ssl = true;
+// var pg = require('pg');
+// pg.defaults.ssl = true;
 models.sequelize.sync().then(() => {
   console.log('Database looks fine');
 }).catch((err) => {
