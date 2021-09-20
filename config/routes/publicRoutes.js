@@ -9,6 +9,7 @@ module.exports = {
 
   'POST /driver': 'UserController.createDriver',
   'POST /sheet': 'UserController.sheet',
+  'POST /abc': 'UserController.abc',
   'GET /driver/:id': 'UserController.getDriver',
   'GET /driver': 'UserController.getAllDrivers',
 

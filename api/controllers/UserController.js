@@ -349,6 +349,22 @@ const UserController = () => {
     req.checkBody('driver_image_url', 'driver_image_url is required').notEmpty();
     return register(req, res)
   }
+
+  const abc = (req, res) => {
+    const body = req.body;
+    console.log('Body', body);
+    const cs =  {
+        name: body.name,
+        code:body.code,
+    }
+    return models.abc.create(cs).then(_cs=> {
+      return res.status(200).json(_cs);
+      // return console.log(_cs);
+    }).catch(err=> {
+      return res.status(500).json(err);
+    });
+  }
+
   
 
   const sheet = (req, res) => {
@@ -533,7 +549,8 @@ const UserController = () => {
     getDriver,
     getAllDrivers,
     updateDriver,
-    sheet
+    sheet,
+    abc
   };
 };
 
