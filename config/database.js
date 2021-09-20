@@ -5,15 +5,6 @@ const connection = require('./connection');
 
 let database;
 
-if (process.env.DATABASE_REJECT_UNAUTHORIZED === "false") {
-  databaseOptions.dialectOptions.ssl = {
-    rejectUnauthorized: false,
-    require: true,
-  };
-} else {
-  databaseOptions.dialectOptions.ssl = true;
-}
-
 switch (process.env.NODE_ENV) {
   case 'production':
     database = new Sequelize(
@@ -28,7 +19,7 @@ switch (process.env.NODE_ENV) {
           ssl: {
             rejectUnauthorized: false,
             require: true,
-            }
+          }
         },
         pool: {
           max: 5,
