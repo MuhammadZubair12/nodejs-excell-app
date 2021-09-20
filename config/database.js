@@ -9,13 +9,13 @@ let database;
 switch (process.env.NODE_ENV) {
   case 'production':
     database = new Sequelize(
-      connection.production.database,
-      connection.production.username,
-      connection.production.password, {
-        host: connection.production.host,
-        dialect: connection.production.dialect,
+      connection.testing.database,
+      connection.testing.username,
+      connection.testing.password, {
+        host: connection.testing.host,
+        dialect: connection.testing.dialect,
         operatorsAliases: false,
-        port:connection.production.port,
+        port:connection.testing.port,
         dialectOptions: {
           ssl: { rejectUnauthorized: false },
           useUTC: true,
@@ -51,37 +51,15 @@ switch (process.env.NODE_ENV) {
         },
       });
     break;
-    case 'development':
-    database = new Sequelize(
-      connection.development.database,
-      connection.development.username,
-      connection.development.password, {
-        host: connection.development.host,
-        dialect: connection.development.dialect,
-        operatorsAliases: false,
-        port:connection.development.port,
-        dialectOptions: {
-          ssl: { rejectUnauthorized: false },
-          useUTC: true,
-          sslmode: require
-        },
-        pool: {
-          max: 5,
-          min: 0,
-          idle: 10000,
-          acquire: 20000
-        },
-      });
-    break;
   default:
   database = new Sequelize(
-    connection.production.database,
-    connection.production.username,
-    connection.production.password, {
-      host: connection.production.host,
-      dialect: connection.production.dialect,
+    connection.development.database,
+    connection.development.username,
+    connection.development.password, {
+      host: connection.development.host,
+      dialect: connection.development.dialect,
       operatorsAliases: false,
-      port:connection.production.port,
+      port:connection.development.port,
       dialectOptions: {
         ssl: { rejectUnauthorized: false },
         useUTC: true,
