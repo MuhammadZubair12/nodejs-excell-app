@@ -14,11 +14,7 @@ switch (process.env.NODE_ENV) {
         host: connection.production.host,
         dialect: connection.production.dialect,
         operatorsAliases: false,
-        dialectOptions: {
-          ssl: { rejectUnauthorized: false },
-          useUTC: true,
-          sslmode: require
-        },
+        ssl: connection.production.ssl,
         port:connection.production.port,
         pool: {
           max: 5,
