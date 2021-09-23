@@ -16,15 +16,15 @@ let pool_config = {
 //   host: 'localhost',
 //   dialect: 'postgres'
 // };
-const development = {
-  database: 'dal1chp6l0krci',
-  username: 'niwlzaixfyqhxh',
-  password: '02e838c87686125ef060f92d39dc70032941a5d985ad59475b2101ddfcb44bc3',
-  host: 'ec2-18-209-143-227.compute-1.amazonaws.com',
-  dialect: 'postgres',
-  port:5432,
-  pool: pool_config,
-};
+// const development = {
+//   database: 'dal1chp6l0krci',
+//   username: 'niwlzaixfyqhxh',
+//   password: '02e838c87686125ef060f92d39dc70032941a5d985ad59475b2101ddfcb44bc3',
+//   host: 'ec2-18-209-143-227.compute-1.amazonaws.com',
+//   dialect: 'postgres',
+//   port:5432,
+//   pool: pool_config,
+// };
 
 
 const production = {
@@ -56,7 +56,6 @@ const testing = {
 
 
 module.exports = {
-  development,
   production,
   testing
 };
