@@ -1,5 +1,4 @@
-const User = require('../models/User'),
-  models = require('../models'),
+const models = require('../models'),
   mailer = require('../../config/mailer'),
   logger = require('../../config/logger'),
   emailHandler = require('../../lib/emailHandler'),
@@ -173,24 +172,24 @@ const UserController = () => {
       });
   };
 
-  const me = (req,res) => {
-    if (req.headers && req.headers.authorization) {
-        var authorization = req.headers.authorization,
-            decoded;
-        try {
-            decoded = jwt.verify(authorization, 'secret');
-        } catch (e) {
-          return res.status(401).json({ isvalid: false, err: e });
-        }
-        var userId = decoded.id;
-        // Fetch the user by id
-        User.findOne({_id: userId}).then(function(user){
-            // Do something with the user
-            return res.status(200).json(user);
-        });
-    }
-    return res.send(500);
-  }
+  // const me = (req,res) => {
+  //   if (req.headers && req.headers.authorization) {
+  //       var authorization = req.headers.authorization,
+  //           decoded;
+  //       try {
+  //           decoded = jwt.verify(authorization, 'secret');
+  //       } catch (e) {
+  //         return res.status(401).json({ isvalid: false, err: e });
+  //       }
+  //       var userId = decoded.id;
+  //       // Fetch the user by id
+  //       User.findOne({_id: userId}).then(function(user){
+  //           // Do something with the user
+  //           return res.status(200).json(user);
+  //       });
+  //   }
+  //   return res.send(500);
+  // }
 
   const getAll = (req, res) => {
     let limit = req.query.limit ? parseInt(req.query.limit, 10) : 50;   // number of records per page
@@ -543,7 +542,6 @@ const UserController = () => {
     getAll,
     updateUserPass,
     updateUser,
-    me,
     getSingle,
     createDriver,
     getDriver,
